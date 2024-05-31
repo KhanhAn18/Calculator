@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+</head>
+<body>
+    <div class="calculator">
+        <div class="screen">
+            <div id="SRC">0</div>
+        </div>
+        <div class="L3">
+            <button class="NB">7</button>
+            <button class="NB">8</button>
+            <button class="NB">9</button>
+            <button class="DEL">DEL</button>
+            <button class="DEL">AC</button>
+        </div>
+        <div class=" L2">
+            <button class="NB">4</button>
+            <button class="NB">5</button>
+            <button class="NB">6</button>
+            <button class="FUNC">&#10005</button>
+            <button class="FUNC" style="font-size: 20px;">&#247</button>
+        </div>
+        <div class="L1">
+            <button class="NB">1</button>
+            <button class="NB">2</button>
+            <button class="NB">3</button>
+            <button class="FUNC" style="font-size: 20px;">&#43</button>
+            <button class="FUNC" style="font-size: 20px;">&#45</button>
+        </div>
+        <div class="L0">
+            <button class="NB" id="DB">0</button>
+            <button class="NB">.</button>
+            <button class="Equal" id="DB">=</button>
+        </div>
+    </div>
+</body>
+<script src="app.js"></script>
+<script>
+    // Sử dụng sự kiện onselectstart để ngăn chặn việc chọn văn bản
+document.addEventListener('selectstart', function (e) {
+    e.preventDefault();
+});
+// Sử dụng sự kiện contextmenu để ngăn chặn hiển thị menu ngữ cảnh khi chuột phải
+document.addEventListener('contextmenu', function (e) {
+    e.preventDefault();
+});
+</script>
+</html>

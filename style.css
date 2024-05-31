@@ -1,0 +1,49 @@
+* {
+    margin: 0;
+    padding: 0;
+    background-color: #40ddc5;
+}
+.calculator {
+    margin: 10% auto;
+    width: fit-content;
+    border: 5px solid rgb(255, 255, 255);
+    border-radius: 10px;
+}
+.screen {
+    height: 60px;
+    margin: 30px 10px;
+    border: 3px solid white;
+    border-radius: 10px;
+}
+button {
+    border: 3px solid white;
+    margin: 10px 5px;
+    width: 60px;
+    height: 60px;
+    border-radius: 10px;
+    color: white;
+    font-family: monospace;
+    font-display: inherit;
+    font-size: 20px;
+    font-weight: bold;
+}
+button:hover {
+    background-color: #0f68cfe3;
+}
+#SRC {
+    font-size: 50px;
+    line-height: 60px;
+    margin-right: 10px;
+    text-align: right;
+    color: #0f68cfe3;
+}
+.DEL {
+    background-color: rgb(255, 0, 0);
+}
+
+.Equal {
+    background-color: rgba(34, 252, 1, 0.693);
+}
+.FUNC {
+    background-color: rgba(203, 49, 241, 0.853);
+}
